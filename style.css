@@ -9,8 +9,13 @@
     flex-direction: wrap;
     background-color: #07161B;
     color: whitesmoke;
-    padding: 0, 5px, 5px, 5px;
+    padding: 30px;
     font-size: 28px;
+}
+
+#header h1 {
+    background-color: #433e49;
+
 }
 /* styles the links inside the header at the top of the page. */
 .navbar ul {
@@ -47,7 +52,7 @@
     background-size: cover;
     background-position: center;
 }
-
+/* the font inside of the top banner image, underneath the header links */
 .subtitle {
     position: absolute;
     color: whitesmoke;

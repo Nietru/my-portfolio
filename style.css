@@ -8,7 +8,7 @@
     background-color: #07161B;
     color: whitesmoke;
     padding: 2%;
-    font-size: 28px;;
+    font-size: 28px;
 }
 
 .navbar ul {
@@ -27,4 +27,12 @@
     width: 125px;
     display: block;
     text-align: center;
+}
+
+.navbar a:hover {
+    background: #8b70ad;
+}
+
+.navbar a:visited {
+    color: rgb(55, 130, 173);
 }

@@ -19,7 +19,7 @@
     padding: .25em .25em .25em 2em;
 
 }
-/* styles the links inside the header at the top of the page. */
+/* styles the boxes containing the links inside the header at the top of the page. */
 .navbar ul {
     list-style: none;
     padding: 0;
@@ -44,7 +44,7 @@
 }
 
 .navbar a:visited {
-    color: rgb(55, 130, 173);
+    color: rgb(221, 162, 24);
 }
     /*this is the banner image directly under the header section */
 .top-banner {
@@ -58,7 +58,7 @@
 }
 /* the font inside of the top banner image, underneath the header links */
 .subtitle {
-    position: absolute;
+    position: absolute; /* makes text appear on top of the background image */
     color: whitesmoke;
     font-style: bold;
     font-size: 24px;
@@ -66,10 +66,25 @@
     right: 10px;
 }
 
+/* attempting to have the elements side by side */
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    line-height: 1.25em;
+
+}
 /* Body Section headers */
 h2 {
-    display: inline-block;            
-    background-color: grey;
-    border-right: 2px black solid;
+    display: inline-block;
+    padding: 15px;            
+}
+
+p {
+    position: relative;
+    top: -35px;
+    left: 150px;
+    
+}
+#contact {
 
 }

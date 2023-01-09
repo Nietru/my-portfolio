@@ -2,15 +2,22 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    display: flexbox;
 }
 /* top banner with title and links inside. */
 #header {
     flex-direction: wrap;
     background-color: #07161B;
     color: whitesmoke;
-    padding: 0, 5px, 5px, 5px;
-    font-size: 28px;
+    padding: 1em 1em 1em 0; /* added this to made the purple background around my name touch against the left edge of webpage */
+    font-size: 24px;
+    font-style: italic;
+}
+
+#header h1 {
+    display: inline-block;  /* Made the purple background fit the text "Tifannie G Truman" */
+    background-color: #433e49;
+    padding: .25em .25em .25em 2em;
+
 }
 /* styles the links inside the header at the top of the page. */
 .navbar ul {
@@ -26,6 +33,7 @@
 
 .navbar a {
     color: whitesmoke;
+    font-size: 18px;
     width: 125px;
     display: block;
     text-align: center;
@@ -40,19 +48,28 @@
 }
     /*this is the banner image directly under the header section */
 .top-banner {
+    display: flex;
     height: 200px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("/images/banner-code.jpg");
+    background: url("/images/banner-code.jpg");
     background-size: cover;
     background-position: center;
 }
-
+/* the font inside of the top banner image, underneath the header links */
 .subtitle {
     position: absolute;
     color: whitesmoke;
     font-style: bold;
     font-size: 24px;
-    top: 250px;
+    top: 290px;
     right: 10px;
+}
+
+/* Body Section headers */
+h2 {
+    display: inline-block;            
+    background-color: grey;
+    border-right: 2px black solid;
+
 }

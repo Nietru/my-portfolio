@@ -5,7 +5,7 @@
 }
 /* top banner with title and links inside. */
 #header {
-    flex-direction: wrap;
+    background-size: cover;
     background-color: #07161B;
     color: whitesmoke;
     padding: 1em 1em 1em 0; /* added this to made the purple background around my name touch against the left edge of webpage */
@@ -17,7 +17,6 @@
     display: inline-block;  /* Made the purple background fit the text "Tifannie G Truman" */
     background-color: #433e49;
     padding: .25em .25em .25em 2em;
-
 }
 /* styles the boxes containing the links inside the header at the top of the page. */
 .navbar ul {
@@ -48,25 +47,24 @@
 }
     /*this is the banner image directly under the header section */
 .top-banner {
-    display: flex;
+    position: relative;
     height: 200px;
-    width: 100%;
+    width: auto;
     margin-bottom: 25px;
     background: url("./images/banner-code.jpg");
     background-size: cover;
-    background-position: center;
 }
 /* the font inside of the top banner image, underneath the header links */
 .subtitle {
-    position: absolute; /* makes text appear on top of the background image */
+    position: relative; /* makes text appear on top of the background image */
     color: whitesmoke;
     font-style: bold;
     font-size: 24px;
-    top: 290px;
-    right: 10px;
+    padding-top: 20%;
+    padding-left: 60%;
 }
 
-/* attempting to have the elements side by side */
+/* attempting to have the h2 and the p tag elements side by side */
 .container {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -81,10 +79,14 @@ h2 {
 
 p {
     position: relative;
+    margin: auto;
+    padding-right: 10%;
     top: -35px;
     left: 150px;
+
     
 }
+
 #contact {
 
 }

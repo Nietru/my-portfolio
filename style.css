@@ -29,7 +29,7 @@
 .navbar li {
     display: inline-block;
 }
-
+/* link text styling for nav links in the header */
 .navbar a {
     color: whitesmoke;
     font-size: 18px;
@@ -37,11 +37,11 @@
     display: block;
     text-align: center;
 }
-
+/* nav links in header have a text cackground color when hovering over them */
 .navbar a:hover {
     background: #433e49;
 }
-
+/* nav links in header change color once visited */
 .navbar a:visited {
     color: rgb(221, 162, 24);
 }
@@ -57,36 +57,33 @@
 /* the font inside of the top banner image, underneath the header links */
 .subtitle {
     position: relative; /* makes text appear on top of the background image */
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 140px;
     color: whitesmoke;
     font-style: bold;
     font-size: 24px;
-    padding-top: 20%;
-    padding-left: 60%;
 }
 
 /* attempting to have the h2 and the p tag elements side by side */
-.container {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    line-height: 1.25em;
 
-}
-/* Body Section headers */
-h2 {
-    display: inline-block;
-    padding: 15px;            
+#container {
+    display: flex;
+    flex-direction: column;
 }
 
-p {
-    position: relative;
-    margin: auto;
-    padding-right: 10%;
-    top: -35px;
-    left: 150px;
-
-    
+.left-column {
+    border-style: solid;
+    padding: 10px;
+    flex: 0 0 30px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
 }
 
-#contact {
-
+.right-column {
+    border-style: solid;
+    padding: 10px;
+    flex: 0 0 300px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
 }

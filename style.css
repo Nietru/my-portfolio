@@ -5,7 +5,7 @@
 }
 /* top banner with title and links inside. */
 #header {
-    flex-direction: wrap;
+    background-size: cover;
     background-color: #07161B;
     color: whitesmoke;
     padding: 1em 1em 1em 0; /* added this to made the purple background around my name touch against the left edge of webpage */
@@ -17,9 +17,8 @@
     display: inline-block;  /* Made the purple background fit the text "Tifannie G Truman" */
     background-color: #433e49;
     padding: .25em .25em .25em 2em;
-
 }
-/* styles the links inside the header at the top of the page. */
+/* styles the boxes containing the links inside the header at the top of the page. */
 .navbar ul {
     list-style: none;
     padding: 0;
@@ -30,7 +29,7 @@
 .navbar li {
     display: inline-block;
 }
-
+/* link text styling for nav links in the header */
 .navbar a {
     color: whitesmoke;
     font-size: 18px;
@@ -38,38 +37,57 @@
     display: block;
     text-align: center;
 }
-
+/* nav links in header have a text cackground color when hovering over them */
 .navbar a:hover {
     background: #433e49;
 }
-
+/* nav links in header change color once visited */
 .navbar a:visited {
-    color: rgb(55, 130, 173);
+    color: rgb(221, 162, 24);
 }
     /*this is the banner image directly under the header section */
 .top-banner {
-    display: flex;
+    position: relative;
     height: 200px;
-    width: 100%;
+    width: auto;
     margin-bottom: 25px;
     background: url("./images/banner-code.jpg");
     background-size: cover;
-    background-position: center;
 }
 /* the font inside of the top banner image, underneath the header links */
 .subtitle {
-    position: absolute;
+    position: relative; /* makes text appear on top of the background image */
+    display: block;
+    text-align: right;
+    padding-top: 140px;
     color: whitesmoke;
     font-style: bold;
     font-size: 24px;
-    top: 290px;
-    right: 10px;
 }
 
-/* Body Section headers */
-h2 {
-    display: inline-block;            
-    background-color: grey;
-    border-right: 2px black solid;
+/* attempting to have the h2 and the p tag elements side by side */
 
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #2e2f2f;
+}
+
+.left-column {
+    float: left;
+    width: 15%;
+    height: auto;
+    text-align: right;
+    margin: 5px;
+    padding: 10px;
+}
+
+.right-column {
+    float: right;
+    width: 80%;
+    line-height: 1.5em;
+    margin: 5px;
+    padding: 10px;
+    border-left:rgb(221, 162, 24) solid;
 }

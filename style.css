@@ -93,3 +93,19 @@
     padding: 10px;
     border-left:rgb(221, 162, 24) solid;
 }
+
+.contact-list {
+    display: flex;
+    float: right;
+    justify-content:space-between;
+    list-style: none;
+}
+
+.contact-list a:hover {
+    color:rgb(221, 162, 24);
+    font-weight: bolder;
+}
+
+.contact-list a:visited {
+    color:rgb(221, 162, 24);
+}

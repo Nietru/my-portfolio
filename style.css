@@ -65,14 +65,16 @@
     font-size: 24px;
 }
 
-/* attempting to have the h2 and the p tag elements side by side */
+/* attempting to have the h2 and the p tag/img tag elements side by side */
 
 #container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex;
+    justify-content: space-between;
     color: #2e2f2f;
 }
+
 /* this class effects the h2s in the container div */
 .left-column {
     float: left;
@@ -86,18 +88,32 @@
 /* this class effects the p tags in the container div */
 .right-column {
     float: right;
+    justify-content: center;
     width: 85%;
     line-height: 1.5em;
-    justify-content: center;
     margin: 5px;
     padding: 10px;
     border-left:rgb(221, 162, 24) solid;
 }
 
+ /* contains the images in the projects section of the body */
+#images {
+    display: flex;
+    flex: 1 1 0;
+    flex-wrap: wrap;
+    gap: 5px;
+
+}
+
+/* .img {
+    display: flex;
+    flex: 1, 2, auto;
+} */
+
 .contact-list {
     display: flex;
     float: right;
-    justify-content:space-between;
+    justify-content:space-evenly;
     list-style: none;
 }
 

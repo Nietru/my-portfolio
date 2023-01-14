@@ -87,42 +87,42 @@
 }
 /* this class effects the p tags in the container div */
 .right-column {
+    background-color: whitesmoke;
     float: right;
     justify-content: center;
     width: 85%;
-    line-height: 1.5em;
+    font-size: 19px;
+    line-height: 1.8;
     margin: 5px;
     padding: 10px;
     border-left:rgb(221, 162, 24) solid;
 }
 
  /* contains the images in the projects section of the body */
-#images {
+.images {
     background-color: whitesmoke;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-.img {
     position: relative;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    width: 40%;
+    gap: 5px;
 }
 
-#img-1 {
+.images img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    opacity: 0.8;
+    border: 5px dashed rgb(221, 162, 24);
+    width: 650px;
+    height: 300px;
+}
+
+.img-title {
     position: relative;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    width: 90%;
-}
+    text-align: center;
 
-.img .img-title {
-        position: relative; /* makes text appear on top of the background image */
-        color: black;
-        display: block;
-        padding: 0 0 0 0;
 }
 
 .contact-list {

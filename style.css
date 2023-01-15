@@ -3,11 +3,19 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* color scheme sourced from https://coolors.co/ */
+:root {
+    --lite-clr: whitesmoke;
+    --dark-clr: #433e49;
+    --ylw-clr: rgb(221, 162, 24);
+  }
+
 /* top banner with title and links inside. */
 #header {
     background-size: cover;
     background-color: #07161B;
-    color: whitesmoke;
+    color: var(--lite-clr);
     padding: 1em 1em 1em 0; /* added this to made the purple background around my name touch against the left edge of webpage */
     font-size: 24px;
     font-style: italic;
@@ -15,7 +23,7 @@
 
 #header h1 {
     display: inline-block;  /* Made the purple background fit the text "Tifannie G Truman" */
-    background-color: #433e49;
+    background-color: var(--dark-clr);
     padding: .25em .25em .25em 2em;
 }
 /* styles the boxes containing the links inside the header at the top of the page. */
@@ -31,7 +39,7 @@
 }
 /* link text styling for nav links in the header */
 .navbar a {
-    color: whitesmoke;
+    color: var(--lite-clr);
     font-size: 18px;
     width: 125px;
     display: block;
@@ -39,11 +47,11 @@
 }
 /* nav links in header have a text cackground color when hovering over them */
 .navbar a:hover {
-    background: #433e49;
+    background: var(--dark-clr);
 }
 /* nav links in header change color once visited */
 .navbar a:visited {
-    color: rgb(221, 162, 24);
+    color: var(--ylw-clr);
 }
     /*this is the banner image directly under the header section */
 .top-banner {
@@ -60,7 +68,7 @@
     display: block;
     text-align: right;
     padding: 140px 30px 0 0;
-    color: whitesmoke;
+    color: var(--lite-clr);
     font-style: bold;
     font-size: 24px;
 }
@@ -72,7 +80,7 @@
     flex-direction: column;
     align-items: flex;
     justify-content: space-between;
-    color: #2e2f2f;
+    color: var(--dark-clr);
 }
 
 /* this class effects the h2s in the container div */
@@ -87,7 +95,7 @@
 }
 /* this class effects the p tags in the container div */
 .right-column {
-    background-color: whitesmoke;
+    background-color: var(--lite-clr);
     float: right;
     justify-content: center;
     width: 85%;
@@ -95,12 +103,12 @@
     line-height: 1.8;
     margin: 5px;
     padding: 10px;
-    border-left:rgb(221, 162, 24) solid;
+    border-left: var(--ylw-clr) solid;
 }
 
  /* contains the images in the projects section of the body */
 .images {
-    background-color: whitesmoke;
+    background-color: var(--lite-clr);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -114,12 +122,13 @@
     flex-wrap: wrap;
     align-items: center;
     opacity: 0.8;
-    border: 5px dashed rgb(221, 162, 24);
+    border: 5px dashed var(--ylw-clr);
     width: 650px;
     height: 300px;
 }
 
 .img-title {
+    float: right;
     position: relative;
     text-align: center;
 
@@ -133,10 +142,30 @@
 }
 
 .contact-list a:hover {
-    color:rgb(221, 162, 24);
+    color: var(--ylw-clr);
     font-weight: bolder;
 }
 
 .contact-list a:visited {
-    color:rgb(221, 162, 24);
+    color: var(--ylw-clr);
+}
+
+
+@media screen (min-width: 768px) {
+    /* For mobile phones: */
+    #container {
+        flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  /* media query for larger screens */
+@media screen (min-width: 992px) {
+    header {
+      width: 75%;
+    }
+    container {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
 }

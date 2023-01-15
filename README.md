@@ -1,25 +1,29 @@
-# challenge-2
-Create a personal professional portfolio from scratch, to be view by future potential employers.
+# Challenge-2: My Portfolio
 
-##User Story:
-AS AN employer
-I WANT to view a potential employee's deployed portfolio of work samples
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+## Description
 
-##Acceptance Criteria:
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
+My motivation for this webpage was to create a webpage, from scratch, that has a responsive flow and showcases my work as an aspiring developer. 
 
-##Color-pallete: 
-https://coolors.co/acbdba-cddddd-a599b5-2e2f2f-051014
+I built off this project to get hands-on experience with html and advanced CSS, including all of the new properties I learned this passed week in class.
+
+I struggled with using grid and flexbox for the anchored images in the "Projects section", and I never quite figured that out. I did seek out tutoring, which helped me realize I needed to wrap my anchor tags in a div.
+
+I learned that there are many different ways to make different code have the same result. I learned that CSS is very complex and there are different ways to accomplish certain styles.
+
+## Installation
+
+This is a singular webpage without external links.
+Deployment URL: https://nietru.github.io/my-portfolio/
+
+## Credits
+
+UNH Coding Bootcamp exercise: Gitlab - Challenge-2:
+https://unh.bootcampcontent.com/unh-coding-bootcamp/UNH-VIRT-FSF-PT-12-2022-U-LOLC
+
+## License
+
+Please reference the GitHub Repo.
+
+## Screencapture
+
+ ![Picture of the finishied Personal Portfolio webpage](/images/readme-pic.PNG?raw=true)

@@ -12,7 +12,7 @@ I learned that there are many different ways to make different code have the sam
 
 ## Installation
 
-This is a singular webpage without external links.
+This is a singular webpage with external links within the images of the Projects section.
 Deployment URL: https://nietru.github.io/my-portfolio/
 
 ## Credits

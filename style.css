@@ -106,6 +106,14 @@
     border-left: var(--ylw-clr) solid;
 }
 
+/* added an image of myself to the about-me section. */
+#about-me img {
+    width: 10%;
+    height: auto;
+    border-top: var(--ylw-clr) solid;
+}
+
+
  /* contains the images in the projects section of the body */
 .images {
     background-color: var(--lite-clr);
@@ -133,6 +141,12 @@
     text-align: center;
 
 }
+/* Attempted to make the first image larger but it did not work out */
+/* #projects .bigger-img { */
+    /* width: 200%; */
+    /* justify-content: left; */
+    /* align-items: flex-start; */
+/* } */
 
 .contact-list {
     display: flex;

@@ -2,7 +2,7 @@
 
 ## Description
 
-My motivation for this webpage was to create a webpage, from scratch, that has a responsive flow and showcases my work as an aspiring developer. 
+My motivation for this webpage was to create a webpage, from scratch, that has a responsive flow and showcases my work as an aspiring developer.
 
 I built off this project to get hands-on experience with html and advanced CSS, including all of the new properties I learned this passed week in class.
 
@@ -26,4 +26,4 @@ Please reference the GitHub Repo.
 
 ## Screencapture
 
- ![Picture of the finishied Personal Portfolio webpage](/images/readme-pic.PNG?raw=true)
+![Picture of the finishied Personal Portfolio webpage](/images/screencapture.PNG?raw=true)
